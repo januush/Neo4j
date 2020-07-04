@@ -1,0 +1,1 @@
+MATCH (:Movie {title: "The Matrix"})<-[:ACTED_IN]-(matrixActors)-[relatedTo]-(movies:Movie) WITH DISTINCT movies RETURN movies

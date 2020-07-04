@@ -1,0 +1,1 @@
+MATCH (peopleWrote:Person)-[:WROTE]->(movies)<-[:DIRECTED]-(peopleDirected) WHERE peopleWrote = peopleDirected RETURN peopleWrote

@@ -1,0 +1,1 @@
+MATCH (people:Person)-[:ACTED_IN]->(movies) RETURN people, COUNT(movies)
